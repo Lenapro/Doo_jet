@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doo-Jet</title>
+    <link rel="stylesheet" href="./CSS/réservation.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+</head>
+
+<body>
+    <div class="shadow py-5 px-lg-5  container ">
+        <h2 class="text-center">Remplir la fiche détaillée de réservation</h2>
+        <form class="row g-3 mt-5" >
+            <div class="col-md-4">
+                <label for="inputdate" class="form-label">PRISE DE SCOOTER :</label><br>
+                <input type="date" id="inputdate">
+                <input type="time" value="14:00">
+
+            </div>
+            <div class="col-md-4">
+                <label for="inputPassword4" class="form-label">REPRISE DE SCOOTER :</label><br>
+                <input type="date" id="inputdate">
+                <input type="time" value="14:00">
+            </div>
+            <div class="col-md-4">
+                <label for="inputmoniteur" class="form-label">Type de Moniteur</label>
+                <select id="inputmoniteur" class="form-select">
+                    <option selected> choisir</option>
+                    <option value="1">ski-nautique </option>
+                    <option value="2">WakeBoard</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="inputequipement" class="form-label">Nombre d'équipements</label>
+                <select id="inputequipement" class="form-select">
+                    <option selected> choisir</option>
+                    <option value="1">1 </option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <div class="col-md-4">
+                <label for="inputmoniteur" class="form-label">Coût unitaire</label><br>
+                <input type="number">
+            </div>
+            <div class="col-md-4">
+                <label for="inputmoniteur" class="form-label">Coût global</label><br>
+                <input type="number">
+            </div>
+
+            <div class="col-md-6" style="margin-top: 5%;">
+                <button type="submit" class="btn btn-primary">Réserver</button>
+            </div>
+            <div class="col-md-6" style="margin-top: 5%; ">
+                <input id="impression" name="impression" type="button" onclick="imprimer_page()"
+                    value="Imprimer cette page"  style="margin-left: 40%;"/>
+            </div>
+
+        </form>
+    </div>
+
+    <script>
+
+        function imprimer_page() {
+            window.print();
+        }
+        
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+</body>
+
+</html>
